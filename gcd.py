@@ -5,18 +5,20 @@ import math
 def get_gcd(a,b):
     m = abs(a)
     n = abs(b)
-    try:
-        while not a==b:
-            if a>b:
-                a = a-b
-            else:
-                b = b-a
-        return a
-    except:
-        print("Did you enter two integers?")
+
+    while not a==b:
+        if a>b:
+            a = a-b
+        else:
+            b = b-a
+    return a
+
 
 while 1==1:
     print("Enter two integers")
 
-    c,d = map(int, input().split())
-    print(get_gcd(c,d))
+    try:
+        c,d = map(int, input().split())
+        print(get_gcd(c,d))
+    except:
+        print("ERROR | Did you input two integers?")
