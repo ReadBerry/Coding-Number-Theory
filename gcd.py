@@ -15,7 +15,8 @@ def get_gcd(a,b):
     except:
         print("Did you enter two integers?")
 
-print("Enter two integers")
+while 1==1:
+    print("Enter two integers")
 
-c,d = map(int, input().split())
-print(get_gcd(c,d))
+    c,d = map(int, input().split())
+    print(get_gcd(c,d))
